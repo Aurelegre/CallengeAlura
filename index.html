@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <img src="img/logoALura.png" alt="logoALura">
+    <div id="contenedor">
+        <div id="ingresar">
+        <textarea id="texto" cols="50" rows="30" placeholder="Ingresa el texto Aqui"></textarea>
+        <div id="botones">
+            <p></p>
+            <button id="enviar" onclick="encriptar()">Encriptar</button>
+            <button id="Desencriptar" onclick="desencriptar()">Desencriptar</button> 
+        </div>
+        
+    </div>
+    <div id="encriptar">
+        <textarea readonly id="encriptado" cols="30" rows="10" placeholder="Ningun Mensaje fue encontrado"></textarea>
+        <div id="boton" >
+            <button id="Desencriptar" onclick="copiarAlPortapapeles('encriptado')">Copiar</button>
+        </div>
+        
+    </div>
+    </div>
+    
+   
+    <script src="app.js" defer></script>
+</body>
+</html>
